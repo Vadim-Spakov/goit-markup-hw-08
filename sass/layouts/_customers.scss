@@ -1,0 +1,55 @@
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+  }
+
+  &__item {
+    display: flex;
+    height: 90px;
+    width: 170px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic-bezier;
+  }
+
+  &__item svg {
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic-bezier;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__item:hover {
+    border: 1px solid $accent-color;
+  }
+  &__item:hover svg {
+    fill: $accent-color;
+  }
+
+  &__icon {
+    fill: $icon-color;
+  }
+}

@@ -1,0 +1,29 @@
+.logo {
+  color: $accent-color;
+  font-family: Raleway, sans-serif;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration-line: none;
+  margin-right: 93px;
+  display: flex;
+}
+
+.logo-2 {
+  color: $accent-color;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  padding-top: 60px;
+}
+
+.colortext {
+  color: $title-text-color;
+}
+
+.colortextwhite {
+  color: $hero-title;
+}

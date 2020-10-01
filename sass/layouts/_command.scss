@@ -1,0 +1,91 @@
+.command {
+  background-color: $background-blue-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    display: flex;
+  }
+
+  &__list {
+    width: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
+    width: 270px;
+    background: $hero-title;
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__list:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.name {
+  color: $title-text-color;
+  font-family: Roboto;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.profession {
+  color: $primaru-text-color;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__item--link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic-bezier;
+  }
+
+  &__item--link:hover,
+  &__item--link:focus {
+    background-color: $accent-color;
+  }
+
+  &__command {
+    width: 20px;
+    height: 20px;
+    fill: $icon-color;
+  }
+
+  &__item:hover svg,
+  &__item:focus svg {
+    color: $accent-color;
+    fill: $hero-title;
+  }
+}

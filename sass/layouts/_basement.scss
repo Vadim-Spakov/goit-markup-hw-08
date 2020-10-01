@@ -1,0 +1,155 @@
+.basement {
+  color: $accent-color;
+  background-color: $background-dark-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__section {
+    display: flex;
+  }
+}
+
+address {
+  margin-top: 20px;
+  margin-right: 70px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: $hero-title;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.mailtel-list {
+  margin-top: 9px;
+}
+
+.mailtel {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.subscribe {
+  display: flex;
+
+  &__list {
+    margin-top: 12px;
+  }
+
+  &__list ul {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__list b {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $hero-title;
+  }
+
+  &__item {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic-bezier;
+  }
+
+  &__item:hover {
+    background-color: $accent-color;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__icon {
+    display: flex;
+    fill: $hero-title;
+  }
+}
+
+.footer {
+  &__subscribe {
+    margin-left: 93px;
+  }
+
+  &__subscribe h3 {
+    text-transform: uppercase;
+    color: $hero-title;
+    margin-bottom: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  &__window {
+    padding-right: 12px;
+  }
+}
+
+.form-input {
+  height: 48px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 0 20px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sign-in-button {
+  height: 50px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: $hero-title;
+  background-color: $accent-color;
+  padding-left: 29px;
+  padding-right: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+.button__icon {
+  display: flex;
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+}
