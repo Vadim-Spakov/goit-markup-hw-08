@@ -31,15 +31,20 @@ img {
 }
 
 .container {
-  width: 1230px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.flexbox {
-  display: flex;
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+
+  .our-work {
+    display: none;
+  }
 }
 
 a {

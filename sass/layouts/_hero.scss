@@ -1,15 +1,15 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
+  max-width: 480px;
+  height: 400px;
   margin-right: auto;
-  padding-top: 200px;
+  margin-left: auto;
+  padding-top: 120px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../icon/Img.jpg");
+    url("../images/Header480.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,8 +17,8 @@
 
   &__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 42px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $hero-title;

@@ -1,10 +1,5 @@
 .feature {
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  &__list {
     color: $title-text-color;
     font-family: Roboto;
     font-style: normal;
@@ -14,7 +9,7 @@
   }
 
   &__text {
-    width: 270px;
+    width: 450px;
     margin-right: 30px;
   }
 
