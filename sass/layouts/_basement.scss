@@ -5,23 +5,25 @@
   padding-bottom: 60px;
 
   &__section {
-    display: flex;
   }
 }
 
-address {
-  margin-top: 20px;
-  margin-right: 70px;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+.address {
+  text-align: center;
+  &__name {
+    margin-top: 20px;
 
-  color: $hero-title;
-  font-family: Roboto;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    color: $hero-title;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .mailtel-list {
@@ -37,29 +39,26 @@ address {
   line-height: 24px;
 }
 
+.subscribe-list {
+  text-align: center;
+  margin-top: 60px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $hero-title;
+}
+
 .subscribe {
-  display: flex;
-
   &__list {
-    margin-top: 12px;
-  }
-
-  &__list ul {
     display: flex;
+    justify-content: center;
     margin-top: 20px;
   }
 
-  &__list b {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $hero-title;
-  }
-
   &__item {
-    display: flex;
     height: 44px;
     width: 44px;
     border-radius: 50%;
@@ -86,15 +85,11 @@ address {
 }
 
 .footer {
-  &__subscribe {
-    margin-left: 93px;
-  }
-
   &__subscribe h3 {
     text-transform: uppercase;
     color: $hero-title;
-    margin-bottom: 20px;
-
+    margin-top: 60px;
+    text-align: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -103,22 +98,12 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
-
-  &__field {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
-  }
-
-  &__window {
-    padding-right: 12px;
-  }
 }
 
 .form-input {
-  height: 48px;
-  width: 358px;
+  height: 50px;
+  width: 100%;
+  max-width: 450px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding: 0 20px;
@@ -127,6 +112,9 @@ address {
 }
 
 .sign-in-button {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   height: 50px;
   width: 200px;
   display: flex;
