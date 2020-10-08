@@ -9,6 +9,7 @@
   }
 
   &__text {
+    list-style: none;
     width: 450px;
     margin-right: 30px;
   }
@@ -28,6 +29,7 @@
   }
 
   &__work {
+    list-style: none;
     color: $title-text-color;
     font-family: Roboto;
     font-style: normal;

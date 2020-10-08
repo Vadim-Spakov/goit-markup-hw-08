@@ -1,10 +1,10 @@
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__list {
-    display: flex;
-    margin-top: 50px;
+    display: block;
+    justify-content: center;
   }
 
   &__title {
@@ -20,8 +20,10 @@
 
   &__item {
     display: flex;
+    flex-wrap: wrap;
     height: 90px;
-    width: 170px;
+    width: 210px;
+    margin-bottom: 30px;
     justify-content: center;
     align-items: center;
     border: 1px solid $icon-color;
