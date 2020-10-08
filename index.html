@@ -239,13 +239,32 @@
       <section class="section command">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="command__title list">
-            <li class="command__list"
-              ><img
-                src="./images/Igor-Demjanenko.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+          <div class="command__title list">
+            <div class="command__list"
+              ><picture>
+                <source
+                  srcset="
+                    ./images/Igor-Demjanenko.jpg     1x,
+                    ./images/Igor-Demjanenko2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/Igor-Demjanenko768.jpg     1x,
+                    ./images/Igor-Demjanenko7682@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/Igor-Demjanenko768.jpg     1x,
+                    ./images/Igor-Demjanenko7682@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)" />
+                <img
+                  src="./images/Igor-Demjanenko.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+              /></picture>
               <h3 class="name">Игорь Демьяненко</h3>
               <p class="profession">Product Designer</p>
               <ul class="icon list">
@@ -305,7 +324,7 @@
                   </a>
                 </li>
               </ul>
-            </li>
+            </div>
 
             <li class="command__list"
               ><img
@@ -507,7 +526,7 @@
                 </li>
               </ul>
             </li>
-          </ul>
+          </div>
         </div>
       </section>
 

@@ -1475,7 +1475,7 @@ address {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1199px;
+    width: 1200px;
   }
   .flexbox {
     display: -webkit-box;
@@ -1483,6 +1483,11 @@ address {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .our-work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .feature__list {
     display: -webkit-box;
