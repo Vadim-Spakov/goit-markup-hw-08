@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1198px) {
   .container {
     width: 768px;
   }
@@ -28,6 +28,7 @@
     &__list {
       position: relative;
       margin-left: 50px;
+      text-align: left;
     }
 
     &__link {
@@ -81,6 +82,10 @@
     margin-right: 30px;
   }
 
+  .feature__text:nth-last-child(2n + 1) {
+    margin-right: 0;
+  }
+
   .hero {
     max-width: 768px;
     height: 400px;
@@ -107,7 +112,12 @@
   }
 
   .command__title {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+  }
+  .command__list:nth-child(2n) {
+    margin-right: 0;
   }
 
   .command__list {
@@ -118,10 +128,96 @@
 
   .customers__list {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 30px;
   }
+
   .customers__item {
     width: 226px;
+    margin-left: 30px;
+  }
+
+  .customers__item:nth-child(3n + 1) {
+    margin-left: 0;
+  }
+
+  .basement__section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .address {
+    margin-right: 76px;
+  }
+
+  .basement {
+    .subscribe-list {
+      margin-top: 12px;
+      text-align: center;
+      margin-left: 165px;
+    }
+
+    .footer__subscribe h3 {
+      margin-top: 60px;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    .subscribe__list ul {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .subscribe {
+      display: flex;
+    }
+
+    .subscribe__item {
+      display: flex;
+    }
+
+    // .footer__field {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    // }
+
+    .footer__subscribe {
+      display: inline;
+      margin-left: 166px;
+    }
+
+    .footer__window {
+      padding-top: 20px;
+    }
+
+    .form-input {
+      height: 48px;
+      width: 358px;
+      padding: 0 20px;
+    }
+
+    .sign-in-button {
+      display: flex;
+    }
+  }
+
+  .buttons {
+    &__list {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    &__title:not(:last-child) {
+      margin-right: 8px;
+    }
   }
 
   .portfolio__list {

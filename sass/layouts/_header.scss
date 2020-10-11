@@ -8,6 +8,7 @@
   position: fixed;
   background: #fff;
   width: 100%;
+  z-index: 3;
 }
 
 .header-nav {
@@ -37,11 +38,13 @@
   &__link:focus {
     color: $accent-color;
   }
+
   li {
     display: block;
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
   &__list {
     color: $title-text-color;
     font-family: Roboto;
@@ -58,9 +61,8 @@
   }
 
   &__list {
-    padding-bottom: 16px;
+    padding-bottom: 10px;
   }
-
   &__mail {
     color: $primaru-text-color;
     // font-family: Roboto;
@@ -92,6 +94,17 @@
 .mail-box {
   display: block;
   margin-left: auto;
+
+  &__item {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: $primaru-text-color;
+  }
+}
+
+.phone-box {
+  display: block;
 
   &__item {
     width: 16px;
