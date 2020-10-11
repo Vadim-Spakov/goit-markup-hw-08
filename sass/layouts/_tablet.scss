@@ -8,6 +8,65 @@
     flex-wrap: wrap;
   }
 
+  .header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .header-nav {
+    display: flex;
+    text-align: center;
+  }
+  .site-nav {
+    display: flex;
+
+    &__list {
+      position: relative;
+      margin-left: 50px;
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 16px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    &__mail {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .current {
+    border-bottom: solid 4px $accent-color;
+    padding-bottom: 28px;
+    border-radius: 2px;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .mail-box {
+    display: block;
+    margin-left: 50px;
+    margin-top: 40px;
+    justify-content: left;
+
+    &__item {
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+      fill: $primaru-text-color;
+    }
+  }
   .our-work {
     display: none;
   }
@@ -63,5 +122,15 @@
   }
   .customers__item {
     width: 226px;
+  }
+
+  .portfolio__list {
+    width: 354px;
+    max-width: 354px;
+    margin-left: 30px;
+  }
+
+  .portfolio__list:nth-child(2n + 1) {
+    margin-left: 0;
   }
 }

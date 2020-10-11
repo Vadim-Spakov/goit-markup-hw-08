@@ -5,15 +5,18 @@
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
-  position: relative;
+  position: fixed;
+  background: #fff;
+  width: 100%;
 }
 
 .header-nav {
   display: none;
   text-align: center;
+
   &.is-open {
     display: block;
-    position: absolute;
+    position: fixed;
     background-color: #fff;
     width: 100%;
     left: 0;
@@ -21,6 +24,7 @@
     z-index: 5;
     transform: translate(-100%);
     transition: 1000ms;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -29,29 +33,17 @@
 }
 
 .site-nav {
-  &__link {
-    display: block;
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-    color: $title-text-color;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    transition: color 250ms;
-    transition-timing-function: $cubic-bezier;
-  }
-
   &__link:hover,
   &__link:focus {
     color: $accent-color;
   }
-
-  &__mail {
-    color: $primaru-text-color;
+  li {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  &__list {
+    color: $title-text-color;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -59,6 +51,25 @@
     line-height: 21px;
     transition: color 250ms;
     transition-timing-function: $cubic-bezier;
+  }
+
+  a {
+    color: $title-text-color;
+  }
+
+  &__list {
+    padding-bottom: 16px;
+  }
+
+  &__mail {
+    color: $primaru-text-color;
+    // font-family: Roboto;
+    // font-style: normal;
+    // font-weight: 500;
+    // font-size: 18px;
+    // line-height: 21px;
+    // transition: color 250ms;
+    // transition-timing-function: $cubic-bezier;
   }
 
   &__mail:hover svg,
@@ -73,25 +84,14 @@
 }
 
 .current {
-  color: $accent-color;
-
-  &::after {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 4px;
-    left: 0;
-    bottom: -8px;
-    background-color: $accent-color;
-    border-radius: 2px;
-    margin-bottom: -1px;
-  }
+  border-bottom: solid 4px $accent-color;
+  padding-bottom: 8px;
+  border-radius: 2px;
 }
 
 .mail-box {
   display: block;
   margin-left: auto;
-  padding-bottom: 16px;
 
   &__item {
     width: 16px;
@@ -103,10 +103,10 @@
 
 .button__menu {
   display: none;
-  @media screen and(max-width: 1199px) {
+  @media screen and(max-width: 767px) {
     display: inline-flex;
   }
-  position: absolute;
+  position: fixed;
 
   margin: 0;
   padding: 0;

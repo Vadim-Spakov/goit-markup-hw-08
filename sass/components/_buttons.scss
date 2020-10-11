@@ -47,8 +47,9 @@
 
 .buttons {
   &__list {
-    display: flex;
+    display: block;
     justify-content: center;
+    flex-direction: row;
   }
 
   &__title {
@@ -69,7 +70,7 @@
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  margin-left: 490px;
+  margin-left: 92%;
   margin-top: 8px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);

@@ -1,6 +1,6 @@
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1230px;
   }
   .flexbox {
     display: flex;
@@ -24,10 +24,14 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .header-nav {
     display: flex;
+    text-align: center;
   }
 
   .site-nav {
@@ -36,10 +40,6 @@
     &__list {
       position: relative;
       margin-right: 50px;
-    }
-
-    &__list .current::after {
-      position: absolute;
     }
 
     &__link {
@@ -55,6 +55,12 @@
     }
   }
 
+  .current {
+    border-bottom: solid 4px $accent-color;
+    padding-bottom: 28px;
+    border-radius: 2px;
+  }
+
   .navigation {
     display: flex;
     align-items: center;
@@ -63,7 +69,7 @@
   .mail-box {
     display: flex;
     margin-left: 180px;
-    margin-top: 32px;
+    margin-top: 40px;
 
     &__item {
       width: 16px;
@@ -81,6 +87,28 @@
     transition-property: all;
     transition-duration: 3000ms;
     transition-timing-function: $cubic-bezier;
+  }
+
+  .comment__text {
+    margin-right: 0;
+  }
+
+  .modal__form--input {
+    width: 450px;
+  }
+
+  .modal__title--button {
+    position: center;
+    margin-left: 120px;
+  }
+
+  .checkbox {
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .checkbox input {
+    margin-top: 3px;
   }
 
   .our-work {
@@ -109,6 +137,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/Header1200.jpg");
+    margin-top: 0;
   }
 
   .hero__title {
@@ -159,53 +188,73 @@
     margin-right: 70px;
   }
 
-  .subscribe-list {
-    margin-top: 12px;
+  .basement {
+    .subscribe-list {
+      margin-top: 12px;
+      text-align: left;
+    }
+
+    .footer__subscribe h3 {
+      margin-top: 12px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+    .subscribe__list ul {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .subscribe {
+      display: flex;
+    }
+
+    .subscribe__item {
+      display: flex;
+    }
+
+    .footer__field {
+      display: flex;
+    }
+
+    .footer__subscribe {
+      margin-left: 93px;
+    }
+
+    .footer__field {
+      flex-direction: row;
+      justify-content: center;
+      align-items: baseline;
+    }
+
+    .footer__window {
+      padding-right: 12px;
+    }
+
+    .form-input {
+      height: 48px;
+      width: 358px;
+      padding: 0 20px;
+    }
+
+    .sign-in-button {
+      display: flex;
+    }
   }
 
-  .subscribe {
-    display: flex;
+  .buttons {
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
   }
 
-  .subscribe__list ul {
-    display: flex;
-    margin-top: 20px;
-  }
-
-  .subscribe__item {
-    display: flex;
-  }
-
-  .footer__field {
-    display: flex;
-  }
-
-  .footer__subscribe {
-    margin-left: 93px;
-  }
-
-  .footer__subscribe h3 {
-    margin-bottom: 20px;
-    margin-top: 0;
-  }
-
-  .footer__field {
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
-  }
-
-  .footer__window {
-    padding-right: 12px;
-  }
-
-  .form-input {
-    height: 48px;
-    width: 358px;
-    padding: 0 20px;
-  }
-
-  .sign-in-button {
-    display: flex;
+  .portfolio {
+    &__list {
+      width: 370px;
+      max-width: 370px;
+      margin-right: 30px;
+      margin-left: 0;
+    }
   }
 }
