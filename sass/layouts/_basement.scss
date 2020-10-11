@@ -6,7 +6,10 @@
   padding-bottom: 60px;
 
   .address {
-    text-align: center;
+    @media (min-width: 320px) and (max-width: 1199px) {
+      text-align: center;
+    }
+
     &__name {
       margin-top: 20px;
 

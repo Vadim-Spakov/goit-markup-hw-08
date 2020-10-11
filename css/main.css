@@ -941,8 +941,10 @@ a {
   padding-bottom: 60px;
 }
 
-.basement .address {
-  text-align: center;
+@media (min-width: 320px) and (max-width: 1199px) {
+  .basement .address {
+    text-align: center;
+  }
 }
 
 .basement .address__name {
@@ -1096,11 +1098,12 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 94px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .portfolio__list {
-  width: 450px;
-  max-width: 480px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   font-family: Roboto;
@@ -1109,6 +1112,13 @@ a {
   font-size: 18px;
   line-height: 36px;
   color: #212121;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .portfolio__list {
+    width: 450px;
+    max-width: 480px;
+  }
 }
 
 .portfolio__heading {
@@ -1735,6 +1745,9 @@ a {
     padding-top: 0;
     padding-bottom: 0;
     height: 80px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header-nav {
     display: -webkit-box;
@@ -1885,6 +1898,7 @@ a {
   }
   .address {
     margin-right: 70px;
+    text-align: left;
   }
   .basement .subscribe-list {
     margin-top: 12px;

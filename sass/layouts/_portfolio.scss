@@ -3,13 +3,17 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 94px;
+    justify-content: center;
   }
 
   &__list {
-    width: 450px;
-    max-width: 480px;
+    @media (min-width: 320px) and (max-width: 479px) {
+      width: 450px;
+      max-width: 480px;
+    }
 
     margin-bottom: 30px;
+
     border: 1px solid #eeeeee;
 
     font-family: Roboto;
