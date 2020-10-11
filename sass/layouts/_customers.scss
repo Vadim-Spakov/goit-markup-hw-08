@@ -1,7 +1,7 @@
 .customers {
   padding-top: 60px;
   padding-bottom: 60px;
-
+  min-width: 480px;
   &__list {
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@
   &__item {
     display: flex;
     height: 90px;
-    width: 200px;
+    width: 180px;
     margin-bottom: 30px;
     margin-left: 30px;
     justify-content: center;

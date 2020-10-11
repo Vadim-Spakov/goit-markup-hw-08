@@ -24,9 +24,10 @@
     display: flex;
     align-items: center;
     margin-left: auto;
-    position: relative;
+    // position: relative;
     padding-top: 0;
     padding-bottom: 0;
+    height: 80px;
   }
 
   .header-nav {
@@ -126,6 +127,7 @@
   }
 
   .hero {
+    margin-top: 80px;
     max-width: 1600px;
     height: 600px;
     margin-right: auto;
@@ -137,7 +139,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/Header1200.jpg");
-    margin-top: 0;
+    // margin-top: 0;
   }
 
   .hero__title {

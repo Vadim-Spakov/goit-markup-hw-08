@@ -37,13 +37,20 @@ img {
   padding-right: 15px;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .container {
-    width: 480px;
+    width: 450px;
+    max-width: 450px;
   }
 
   .our-work {
     display: none;
+  }
+
+  img {
+    display: block;
+    min-width: 450px;
+    height: auto;
   }
 }
 
