@@ -64,3 +64,11 @@
 .icon__asronaut::before {
   background-image: url("../icon/astronaut.svg");
 }
+
+@media (max-width: 479px) {
+  .feature__text {
+    min-width: 310px;
+    max-width: 479px;
+    width: 100%;
+  }
+}

@@ -37,7 +37,7 @@ img {
   padding-right: 15px;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 479px) and (max-width: 767px) {
   .container {
     width: 450px;
     max-width: 450px;
@@ -68,4 +68,16 @@ a {
 .about-us {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+@media (max-width: 479px) {
+  .container {
+    width: 100%;
+    max-width: 479px;
+    min-width: 320px;
+  }
+
+  .our-work {
+    display: none;
+  }
 }

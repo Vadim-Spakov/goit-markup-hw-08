@@ -39,3 +39,25 @@
     text-transform: uppercase;
   }
 }
+
+@media (max-width: 479px) {
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    &__list {
+      display: flex;
+      width: 100%;
+      margin-right: 0;
+      img {
+        width: 100%;
+        max-width: 479px;
+        min-width: 320px;
+      }
+    }
+    &__text {
+      width: 100%;
+    }
+  }
+}

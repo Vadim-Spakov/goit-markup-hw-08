@@ -58,3 +58,11 @@
     fill: $icon-color;
   }
 }
+
+@media (max-width: 479px) {
+  .customers {
+    max-width: 479px;
+    min-width: 320px;
+    width: 100%
+  }
+}

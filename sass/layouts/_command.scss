@@ -21,6 +21,24 @@
   }
 }
 
+@media (max-width: 479px) {
+  .command {
+    min-width: 310px;
+    max-width: 479px;
+    width: 100%;
+    &__list {
+      min-width: 310px;
+      max-width: 479px;
+      width: 100%;
+    }
+    img {
+      min-width: 310px;
+      max-width: 479px;
+      width: 100%;
+    }
+  }
+}
+
 .name {
   color: $title-text-color;
   font-family: Roboto;
